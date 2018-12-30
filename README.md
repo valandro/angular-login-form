@@ -4,3 +4,11 @@
 
 This project consists in a GUI for access my [`Java authentication application`](https://github.com/valandro/java-auth-spring) .
 
+### Running
+
+```
+npm install
+npm run build
+npm run start
+```
+
