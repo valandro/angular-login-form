@@ -8,10 +8,10 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  authenticate() {
+  authenticate(req: Object) {
     return this.http.post('http://127.0.0.1:8090/auth',{
-      username: '',
-      password: ''
+      username: req['username'],
+      password: req['password']
     });
   }
 }

@@ -2,11 +2,11 @@
   <div class="form">
     <h2>Login</h2>
     <h2 class="failed">{{ failed$ }}</h2>
-    <div class="login-form">
-      <input type="text" placeholder="username"/>
-      <input type="password" placeholder="password"/>
-      <button (click)="onClick($event)">login</button>
+    <form name="form" (ngSubmit)="onSubmit(f)" #f="ngForm" novalidate>
+      <input type="text" placeholder="username" name="username" ngModel/>
+      <input type="password" placeholder="password" name="password" ngModel/>
+      <button type="submit">login</button>
       <p class="message">Not registered? <a>Create an account</a></p>
-    </div>
+    </form>
   </div>
 </div>

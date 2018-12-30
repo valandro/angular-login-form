@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
-import { Observable } from 'rxjs';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-login-form',
@@ -18,9 +18,11 @@ export class LoginFormComponent implements OnInit {
     this.failed$ = ''
   }
 
-  public onClick(event: Event) {
-    this.data.authenticate().subscribe(
-      res => { 
+  public onSubmit(form: NgForm) {
+    this.auth$ = form.value
+    this.data.authenticate(this.auth$).subscribe(
+      res => {
+        this.failed$ = ''
         console.log(res) 
       },
       err => { 
