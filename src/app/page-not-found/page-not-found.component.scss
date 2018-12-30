@@ -1,0 +1,36 @@
+.not-found {
+    background: linear-gradient(-135deg, #0069ff, #81c4ad);
+    color: #ffffff;
+    height: 100vh;
+    text-align: center;
+    font-family: 'Montserrat', 'sans-serif';    
+    .grid {
+        padding-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    h1 {
+        font-weight: bold;
+        margin-top: 2rem;
+        grid-column: 1 / 13;
+        font-size: 3.25em;
+    }
+    .center {
+        padding-top: 6rem;
+        grid-column: 1 / 13;        
+        img {
+            width: 15rem;
+        }
+    }
+    p {
+        font-size: 1.25rem;
+        margin-bottom: 3rem;
+    }
+    a {
+        grid-column: 1 / 13;        
+        font-size: 1.15rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
