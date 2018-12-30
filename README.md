@@ -1,4 +1,5 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![TravisCI](https://travis-ci.org/valandro/angular-login-form.svg?branch=master)
 
 # Angular Login Form
 
